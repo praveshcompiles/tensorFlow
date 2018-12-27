@@ -13,14 +13,24 @@ The problem:  62 types of traffic signs needs to be classified correctly.
 
 
 62 labels for 62 types of traffic signs
+
 Images are converted to matrix values
+
 Images are transformed to grayscale (classification vs detection)
+
 Rescale the images to 28x28  (784-dimensional)
+
 Define placeholders for inputs and labels because ( “real” data is not yet put)
- Flattening of the input - making it linear
+
+Flattening of the input - making it linear
+
 A fully connected layer that generates logits , is constructed
 Logits is the function operates on the unscaled output of earlier layers
+
 Multi-layer perceptron 
+
 Loss function: softmax cross entropy  - measures probability in discrete classification tasks 
+
 Optimizer - Stochastic Gradient Descent (SGD) 
+
 When the session is finally ran, the placeholders get the values of the dataset that is passed in the run() function
